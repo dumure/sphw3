@@ -1,0 +1,24 @@
+﻿<Window x:Class="sphw3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sphw3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="220" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="File:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,10,0,0" Width="250"/>
+        <Button Content="File..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,10,0,0" Click="Button_Click"/>
+
+        <Label Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,50,0,0" Width="225"/>
+
+        <TextBlock Text="Encrypt process:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,89,0,0"/>
+
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0" Width="355" Height="20"/>
+
+        <Button Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,140,0,0" Width="100" Click="Button_Click_1"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,140,0,0" Width="100" Click="Button_Click_2"/>
+    </Grid>
+</Window>
